@@ -27,3 +27,9 @@ Random Forest Regression, Knn Imputation, ARIMA time series forcasting
 #### Using Pearsons Correlation where target column is co2
 1. 10 most positively correlated columns to co2
 ![Screenshot 2022-06-21 102846](https://user-images.githubusercontent.com/95181908/174900185-5c53e553-ebaf-484a-9b39-ab3102c38337.png)
+2. 10 most negatively correlated columns to co2
+![Screenshot 2022-06-21 152548](https://user-images.githubusercontent.com/95181908/174900288-7670d7d9-d21c-4b56-bf15-2c3bc8c9698f.png)
+
+#### Using Random Forest Regression to determine feature importance for co2 column
+![Screenshot 2022-06-21 103145](https://user-images.githubusercontent.com/95181908/174900432-27f9eab3-3941-45b9-b991-32449caf3bca.png)
+
