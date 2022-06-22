@@ -1,0 +1,949 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='final_cleaned_co2' inline='true' name='federated.1xug3nj11ne8lx1g52eov0gtlv3z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_cleaned_co2' name='textscan.1s77nby13zimw61diqolo13u5cz8'>
+            <connection class='textscan' directory='C:/Users/Quinn/Practicum Project' filename='final_cleaned_co2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1s77nby13zimw61diqolo13u5cz8' name='final_cleaned_co2.csv' table='[final_cleaned_co2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='year' ordinal='0' />
+            <column datatype='real' name='co2' ordinal='1' />
+            <column datatype='real' name='co2_per_capita' ordinal='2' />
+            <column datatype='real' name='cement_co2' ordinal='3' />
+            <column datatype='real' name='cement_co2_per_capita' ordinal='4' />
+            <column datatype='real' name='coal_co2' ordinal='5' />
+            <column datatype='real' name='coal_co2_per_capita' ordinal='6' />
+            <column datatype='real' name='gas_co2' ordinal='7' />
+            <column datatype='real' name='gas_co2_per_capita' ordinal='8' />
+            <column datatype='real' name='oil_co2' ordinal='9' />
+            <column datatype='real' name='oil_co2_per_capita' ordinal='10' />
+            <column datatype='real' name='co2_growth_prct' ordinal='11' />
+            <column datatype='real' name='co2_growth_abs' ordinal='12' />
+            <column datatype='real' name='co2_per_gdp' ordinal='13' />
+            <column datatype='real' name='co2_per_unit_energy' ordinal='14' />
+            <column datatype='real' name='cumulative_co2' ordinal='15' />
+            <column datatype='real' name='cumulative_cement_co2' ordinal='16' />
+            <column datatype='real' name='cumulative_coal_co2' ordinal='17' />
+            <column datatype='real' name='cumulative_gas_co2' ordinal='18' />
+            <column datatype='real' name='cumulative_oil_co2' ordinal='19' />
+            <column datatype='real' name='share_global_co2' ordinal='20' />
+            <column datatype='real' name='share_global_cement_co2' ordinal='21' />
+            <column datatype='real' name='share_global_coal_co2' ordinal='22' />
+            <column datatype='real' name='share_global_gas_co2' ordinal='23' />
+            <column datatype='real' name='share_global_oil_co2' ordinal='24' />
+            <column datatype='real' name='share_global_cumulative_co2' ordinal='25' />
+            <column datatype='real' name='share_global_cumulative_cement_co2' ordinal='26' />
+            <column datatype='real' name='share_global_cumulative_coal_co2' ordinal='27' />
+            <column datatype='real' name='share_global_cumulative_gas_co2' ordinal='28' />
+            <column datatype='real' name='share_global_cumulative_oil_co2' ordinal='29' />
+            <column datatype='real' name='total_ghg' ordinal='30' />
+            <column datatype='real' name='ghg_per_capita' ordinal='31' />
+            <column datatype='real' name='total_ghg_excluding_lucf' ordinal='32' />
+            <column datatype='real' name='ghg_excluding_lucf_per_capita' ordinal='33' />
+            <column datatype='real' name='methane' ordinal='34' />
+            <column datatype='real' name='methane_per_capita' ordinal='35' />
+            <column datatype='real' name='nitrous_oxide' ordinal='36' />
+            <column datatype='real' name='nitrous_oxide_per_capita' ordinal='37' />
+            <column datatype='real' name='population' ordinal='38' />
+            <column datatype='real' name='gdp' ordinal='39' />
+            <column datatype='real' name='primary_energy_consumption' ordinal='40' />
+            <column datatype='real' name='energy_per_capita' ordinal='41' />
+            <column datatype='real' name='energy_per_gdp' ordinal='42' />
+            <column datatype='string' name='country' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1s77nby13zimw61diqolo13u5cz8' name='final_cleaned_co2.csv' table='[final_cleaned_co2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='year' ordinal='0' />
+            <column datatype='real' name='co2' ordinal='1' />
+            <column datatype='real' name='co2_per_capita' ordinal='2' />
+            <column datatype='real' name='cement_co2' ordinal='3' />
+            <column datatype='real' name='cement_co2_per_capita' ordinal='4' />
+            <column datatype='real' name='coal_co2' ordinal='5' />
+            <column datatype='real' name='coal_co2_per_capita' ordinal='6' />
+            <column datatype='real' name='gas_co2' ordinal='7' />
+            <column datatype='real' name='gas_co2_per_capita' ordinal='8' />
+            <column datatype='real' name='oil_co2' ordinal='9' />
+            <column datatype='real' name='oil_co2_per_capita' ordinal='10' />
+            <column datatype='real' name='co2_growth_prct' ordinal='11' />
+            <column datatype='real' name='co2_growth_abs' ordinal='12' />
+            <column datatype='real' name='co2_per_gdp' ordinal='13' />
+            <column datatype='real' name='co2_per_unit_energy' ordinal='14' />
+            <column datatype='real' name='cumulative_co2' ordinal='15' />
+            <column datatype='real' name='cumulative_cement_co2' ordinal='16' />
+            <column datatype='real' name='cumulative_coal_co2' ordinal='17' />
+            <column datatype='real' name='cumulative_gas_co2' ordinal='18' />
+            <column datatype='real' name='cumulative_oil_co2' ordinal='19' />
+            <column datatype='real' name='share_global_co2' ordinal='20' />
+            <column datatype='real' name='share_global_cement_co2' ordinal='21' />
+            <column datatype='real' name='share_global_coal_co2' ordinal='22' />
+            <column datatype='real' name='share_global_gas_co2' ordinal='23' />
+            <column datatype='real' name='share_global_oil_co2' ordinal='24' />
+            <column datatype='real' name='share_global_cumulative_co2' ordinal='25' />
+            <column datatype='real' name='share_global_cumulative_cement_co2' ordinal='26' />
+            <column datatype='real' name='share_global_cumulative_coal_co2' ordinal='27' />
+            <column datatype='real' name='share_global_cumulative_gas_co2' ordinal='28' />
+            <column datatype='real' name='share_global_cumulative_oil_co2' ordinal='29' />
+            <column datatype='real' name='total_ghg' ordinal='30' />
+            <column datatype='real' name='ghg_per_capita' ordinal='31' />
+            <column datatype='real' name='total_ghg_excluding_lucf' ordinal='32' />
+            <column datatype='real' name='ghg_excluding_lucf_per_capita' ordinal='33' />
+            <column datatype='real' name='methane' ordinal='34' />
+            <column datatype='real' name='methane_per_capita' ordinal='35' />
+            <column datatype='real' name='nitrous_oxide' ordinal='36' />
+            <column datatype='real' name='nitrous_oxide_per_capita' ordinal='37' />
+            <column datatype='real' name='population' ordinal='38' />
+            <column datatype='real' name='gdp' ordinal='39' />
+            <column datatype='real' name='primary_energy_consumption' ordinal='40' />
+            <column datatype='real' name='energy_per_capita' ordinal='41' />
+            <column datatype='real' name='energy_per_gdp' ordinal='42' />
+            <column datatype='string' name='country' ordinal='43' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2_per_capita</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cement_co2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cement_co2_per_capita</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>coal_co2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>coal_co2_per_capita</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>gas_co2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>gas_co2_per_capita</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>oil_co2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>oil_co2_per_capita</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_growth_prct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_growth_prct]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2_growth_prct</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_growth_abs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_growth_abs]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2_growth_abs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_gdp]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2_per_gdp</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_unit_energy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_unit_energy]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>co2_per_unit_energy</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cumulative_co2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_cement_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cumulative_cement_co2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_coal_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cumulative_coal_co2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_gas_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cumulative_gas_co2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_oil_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>cumulative_oil_co2</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_co2</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cement_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cement_co2</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_coal_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_coal_co2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_gas_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_gas_co2</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_oil_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_oil_co2</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cumulative_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cumulative_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cumulative_co2</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cumulative_cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cumulative_cement_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cumulative_cement_co2</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cumulative_coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cumulative_coal_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cumulative_coal_co2</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cumulative_gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cumulative_gas_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cumulative_gas_co2</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>share_global_cumulative_oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[share_global_cumulative_oil_co2]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>share_global_cumulative_oil_co2</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_ghg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_ghg]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>total_ghg</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ghg_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ghg_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>ghg_per_capita</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_ghg_excluding_lucf</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_ghg_excluding_lucf]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>total_ghg_excluding_lucf</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ghg_excluding_lucf_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ghg_excluding_lucf_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>ghg_excluding_lucf_per_capita</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>methane</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[methane]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>methane</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>methane_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[methane_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>methane_per_capita</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nitrous_oxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nitrous_oxide]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>nitrous_oxide</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nitrous_oxide_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nitrous_oxide_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>nitrous_oxide_per_capita</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>gdp</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primary_energy_consumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[primary_energy_consumption]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>primary_energy_consumption</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energy_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[energy_per_capita]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>energy_per_capita</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energy_per_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[energy_per_gdp]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>energy_per_gdp</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[final_cleaned_co2.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='final_cleaned_co2.csv' datatype='table' name='[__tableau_internal_object_id__].[final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1]' role='measure' type='quantitative' />
+      <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+      <column caption='Cement Co2 Per Capita' datatype='real' name='[cement_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+      <column caption='Co2 Growth Abs' datatype='real' name='[co2_growth_abs]' role='measure' type='quantitative' />
+      <column caption='Co2 Growth Prct' datatype='real' name='[co2_growth_prct]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Capita' datatype='real' name='[co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Gdp' datatype='real' name='[co2_per_gdp]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Unit Energy' datatype='real' name='[co2_per_unit_energy]' role='measure' type='quantitative' />
+      <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+      <column caption='Coal Co2 Per Capita' datatype='real' name='[coal_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Cumulative Cement Co2' datatype='real' name='[cumulative_cement_co2]' role='measure' type='quantitative' />
+      <column caption='Cumulative Co2' datatype='real' name='[cumulative_co2]' role='measure' type='quantitative' />
+      <column caption='Cumulative Coal Co2' datatype='real' name='[cumulative_coal_co2]' role='measure' type='quantitative' />
+      <column caption='Cumulative Gas Co2' datatype='real' name='[cumulative_gas_co2]' role='measure' type='quantitative' />
+      <column caption='Cumulative Oil Co2' datatype='real' name='[cumulative_oil_co2]' role='measure' type='quantitative' />
+      <column caption='Energy Per Capita' datatype='real' name='[energy_per_capita]' role='measure' type='quantitative' />
+      <column caption='Energy Per Gdp' datatype='real' name='[energy_per_gdp]' role='measure' type='quantitative' />
+      <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+      <column caption='Gas Co2 Per Capita' datatype='real' name='[gas_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Gdp' datatype='real' name='[gdp]' role='measure' type='quantitative' />
+      <column caption='Ghg Excluding Lucf Per Capita' datatype='real' name='[ghg_excluding_lucf_per_capita]' role='measure' type='quantitative' />
+      <column caption='Ghg Per Capita' datatype='real' name='[ghg_per_capita]' role='measure' type='quantitative' />
+      <column caption='Methane' datatype='real' name='[methane]' role='measure' type='quantitative' />
+      <column caption='Methane Per Capita' datatype='real' name='[methane_per_capita]' role='measure' type='quantitative' />
+      <column caption='Nitrous Oxide' datatype='real' name='[nitrous_oxide]' role='measure' type='quantitative' />
+      <column caption='Nitrous Oxide Per Capita' datatype='real' name='[nitrous_oxide_per_capita]' role='measure' type='quantitative' />
+      <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+      <column caption='Oil Co2 Per Capita' datatype='real' name='[oil_co2_per_capita]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Primary Energy Consumption' datatype='real' name='[primary_energy_consumption]' role='measure' type='quantitative' />
+      <column caption='Share Global Cement Co2' datatype='real' name='[share_global_cement_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Co2' datatype='real' name='[share_global_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Coal Co2' datatype='real' name='[share_global_coal_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Cumulative Cement Co2' datatype='real' name='[share_global_cumulative_cement_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Cumulative Co2' datatype='real' name='[share_global_cumulative_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Cumulative Coal Co2' datatype='real' name='[share_global_cumulative_coal_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Cumulative Gas Co2' datatype='real' name='[share_global_cumulative_gas_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Cumulative Oil Co2' datatype='real' name='[share_global_cumulative_oil_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Gas Co2' datatype='real' name='[share_global_gas_co2]' role='measure' type='quantitative' />
+      <column caption='Share Global Oil Co2' datatype='real' name='[share_global_oil_co2]' role='measure' type='quantitative' />
+      <column caption='Total Ghg' datatype='real' name='[total_ghg]' role='measure' type='quantitative' />
+      <column caption='Total Ghg Excluding Lucf' datatype='real' name='[total_ghg_excluding_lucf]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='final_cleaned_co2.csv' id='final_cleaned_co2.csv_F84ABCEA2E7B42619E94B01040E4D6D1'>
+            <properties context=''>
+              <relation connection='textscan.1s77nby13zimw61diqolo13u5cz8' name='final_cleaned_co2.csv' table='[final_cleaned_co2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='year' ordinal='0' />
+                  <column datatype='real' name='co2' ordinal='1' />
+                  <column datatype='real' name='co2_per_capita' ordinal='2' />
+                  <column datatype='real' name='cement_co2' ordinal='3' />
+                  <column datatype='real' name='cement_co2_per_capita' ordinal='4' />
+                  <column datatype='real' name='coal_co2' ordinal='5' />
+                  <column datatype='real' name='coal_co2_per_capita' ordinal='6' />
+                  <column datatype='real' name='gas_co2' ordinal='7' />
+                  <column datatype='real' name='gas_co2_per_capita' ordinal='8' />
+                  <column datatype='real' name='oil_co2' ordinal='9' />
+                  <column datatype='real' name='oil_co2_per_capita' ordinal='10' />
+                  <column datatype='real' name='co2_growth_prct' ordinal='11' />
+                  <column datatype='real' name='co2_growth_abs' ordinal='12' />
+                  <column datatype='real' name='co2_per_gdp' ordinal='13' />
+                  <column datatype='real' name='co2_per_unit_energy' ordinal='14' />
+                  <column datatype='real' name='cumulative_co2' ordinal='15' />
+                  <column datatype='real' name='cumulative_cement_co2' ordinal='16' />
+                  <column datatype='real' name='cumulative_coal_co2' ordinal='17' />
+                  <column datatype='real' name='cumulative_gas_co2' ordinal='18' />
+                  <column datatype='real' name='cumulative_oil_co2' ordinal='19' />
+                  <column datatype='real' name='share_global_co2' ordinal='20' />
+                  <column datatype='real' name='share_global_cement_co2' ordinal='21' />
+                  <column datatype='real' name='share_global_coal_co2' ordinal='22' />
+                  <column datatype='real' name='share_global_gas_co2' ordinal='23' />
+                  <column datatype='real' name='share_global_oil_co2' ordinal='24' />
+                  <column datatype='real' name='share_global_cumulative_co2' ordinal='25' />
+                  <column datatype='real' name='share_global_cumulative_cement_co2' ordinal='26' />
+                  <column datatype='real' name='share_global_cumulative_coal_co2' ordinal='27' />
+                  <column datatype='real' name='share_global_cumulative_gas_co2' ordinal='28' />
+                  <column datatype='real' name='share_global_cumulative_oil_co2' ordinal='29' />
+                  <column datatype='real' name='total_ghg' ordinal='30' />
+                  <column datatype='real' name='ghg_per_capita' ordinal='31' />
+                  <column datatype='real' name='total_ghg_excluding_lucf' ordinal='32' />
+                  <column datatype='real' name='ghg_excluding_lucf_per_capita' ordinal='33' />
+                  <column datatype='real' name='methane' ordinal='34' />
+                  <column datatype='real' name='methane_per_capita' ordinal='35' />
+                  <column datatype='real' name='nitrous_oxide' ordinal='36' />
+                  <column datatype='real' name='nitrous_oxide_per_capita' ordinal='37' />
+                  <column datatype='real' name='population' ordinal='38' />
+                  <column datatype='real' name='gdp' ordinal='39' />
+                  <column datatype='real' name='primary_energy_consumption' ordinal='40' />
+                  <column datatype='real' name='energy_per_capita' ordinal='41' />
+                  <column datatype='real' name='energy_per_gdp' ordinal='42' />
+                  <column datatype='string' name='country' ordinal='43' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_cleaned_co2' name='federated.1xug3nj11ne8lx1g52eov0gtlv3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xug3nj11ne8lx1g52eov0gtlv3z'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[yr:year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:year:ok]' member='2021' />
+              <groupfilter function='member' level='[yr:year:ok]' member='2022' />
+              <groupfilter function='member' level='[yr:year:ok]' member='2023' />
+              <groupfilter function='member' level='[yr:year:ok]' member='2024' />
+              <groupfilter function='member' level='[yr:year:ok]' member='2025' />
+              <groupfilter function='member' level='[yr:year:ok]' member='2026' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[yr:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[yr:year:ok]' value='589' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[none:country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[sum:co2:qk]</rows>
+        <cols>[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[yr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{54CAC118-BD1D-4E24-AC5E-16FD5FA314AB}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[none:country:nk]</field>
+            <field>[federated.1xug3nj11ne8lx1g52eov0gtlv3z].[yr:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2E041786-28D5-4DBA-A70C-473493D1D97C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      Yx+X5qat1vF/we5LjGLwfnsAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
